@@ -1,2 +1,0 @@
-# Antonio Cecchi
-## Game Designer
