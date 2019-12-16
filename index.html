@@ -13,7 +13,6 @@ body, html {
   color: #999;
   line-height: 1.8;
 }
-
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
   background-attachment: fixed;
@@ -21,28 +20,23 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 /* First image (Logo. Full height) */
 .bgimg-1 {
   background-image: url(Images/LuciBG.jpeg);
   min-height: 100%;
 }
-
 /* Second image (Portfolio) */
 .bgimg-2 {
   background-image: url(Images/LuciPioggia.jpeg);
   min-height: 400px;
 }
-
 /* Third image (Contact) */
 .bgimg-3 {
   background-image: url(Images/Sveglia.jpeg);
   min-height: 400px;
 }
-
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
-
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
   .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -150,7 +144,7 @@ body, html {
 
   <div class="w3-row-padding w3-center w3-section">
     <div class="w3-col m3">
-      <img src="URL IMMAGINE 5" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+      <img src="Images/LevelDesignPatternIcon.PNG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
     </div>
 
     <div class="w3-col m3">
@@ -170,6 +164,24 @@ body, html {
   <h4 class="w3-center"><em>Here are some of my <strong>Research</strong> and <strong>Studies</strong></h4><br>
   <p class="w3-center">Click on the images to make them bigger.<br> Work in Progress...</em></p><br>
   
+<!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+<div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+        <img src="URL IMMAGINE 1" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="URL IMMAGINE 2" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="URL IMMAGINE 3" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="URL IMMAGINE 4" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+    </div>
+  </div>
 </div>
 
  
@@ -235,7 +247,6 @@ function onClick(element) {
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
 }
-
 // Change style of navbar on scroll
 window.onscroll = function() {myFunction()};
 function myFunction() {
@@ -246,7 +257,6 @@ function myFunction() {
         navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
     }
 }
-
 // Used to toggle the menu on small screens when clicking on the menu button
 function toggleFunction() {
     var x = document.getElementById("navDemo");
